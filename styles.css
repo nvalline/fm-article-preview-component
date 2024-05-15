@@ -2,17 +2,17 @@
 
 :root {
 	/* Primary Colors */
-	--veryDarkGrayBlue: hsl(217, 19%, 35%);
-	--desaturatedDarkBlue: hsl(214, 17%, 51%);
-	--grayishBlue: hsl(212, 23%, 69%);
-	--lightGrayBlue: hsl(210, 46%, 95%);
+	--clr-veryDarkGrayBlue: hsl(217, 19%, 35%);
+	--clr-desaturatedDarkBlue: hsl(214, 17%, 51%);
+	--clr-grayishBlue: hsl(212, 23%, 69%);
+	--clr-lightGrayBlue: hsl(210, 46%, 95%);
 
 	/* Neutral Colors */
-	--shadow: hsla(210, 29%, 84%, 0.5034);
-	--white: hsl(0, 0%, 100%);
+	--clr-shadow: hsla(210, 29%, 84%, 0.5034);
+	--clr-white: hsl(0, 0%, 100%);
 
 	/* Font Family */
-	--manrope: 'Manrope', sans-serif;
+	--ff-manrope: 'Manrope', sans-serif;
 
 	/* Font Size */
 	--fs-title: clamp(1rem, 0.912rem + 0.3756vi, 1.25rem);
@@ -22,6 +22,9 @@
 	/* Font Weight */
 	--fw-medium: 500;
 	--fw-bold: 700;
+
+	/* Breakpoints */
+	--bp-landscape: 794px;
 }
 
 /* ----- Reset ----- */
@@ -111,8 +114,8 @@ textarea:not([rows]) {
 /* ----- Component Styles ----- */
 
 body {
-	background-color: var(--lightGrayBlue);
-	font-family: var(--manrope);
+	background-color: var(--clr-lightGrayBlue);
+	font-family: var(--ff-manrope);
 	font-optical-sizing: auto;
 	font-style: normal;
 }
@@ -130,10 +133,10 @@ section {
 
 .card {
 	width: 327px;
-	background-color: var(--white);
+	background-color: var(--clr-white);
 	border-radius: 10px;
 	overflow: hidden;
-	box-shadow: 0 40px 40px -10px var(--shadow);
+	box-shadow: 0 40px 40px -10px var(--clr-shadow);
 }
 
 .cardContent {
@@ -145,7 +148,7 @@ section {
 		font-weight: var(--fw-bold);
 		line-height: 1.5;
 		letter-spacing: 0.2px;
-		color: var(--veryDarkGrayBlue);
+		color: var(--clr-veryDarkGrayBlue);
 	}
 
 	p {
@@ -153,7 +156,7 @@ section {
 		font-weight: var(--fw-medium);
 		line-height: 1.54;
 		letter-spacing: 0.12px;
-		color: var(--desaturatedDarkBlue);
+		color: var(--clr-desaturatedDarkBlue);
 	}
 }
 
@@ -184,7 +187,7 @@ section {
 				font-weight: var(--fw-bold);
 				line-height: 1.54;
 				letter-spacing: 0.12px;
-				color: var(--veryDarkGrayBlue);
+				color: var(--clr-veryDarkGrayBlue);
 			}
 
 			p {
@@ -192,12 +195,13 @@ section {
 				font-weight: var(--fw-medium);
 				line-height: 1.54;
 				letter-spacing: 0.12px;
-				color: var(--grayishBlue);
+				color: var(--clr-grayishBlue);
 			}
 		}
 	}
 }
 
+/* Share Icon */
 .share {
 	height: 32px;
 	width: 32px;
@@ -205,7 +209,8 @@ section {
 	align-items: center;
 	justify-content: center;
 	border-radius: 50%;
-	background-color: var(--lightGrayBlue);
+	background-color: var(--clr-lightGrayBlue);
+	cursor: pointer;
 }
 
 .shareWrapper {
@@ -213,7 +218,7 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: var(--veryDarkGrayBlue);
+	background-color: var(--clr-veryDarkGrayBlue);
 
 	.shareBlock {
 		display: flex;
@@ -238,10 +243,10 @@ section {
 	}
 
 	.iconActive {
-		background-color: var(--desaturatedDarkBlue);
+		background-color: var(--clr-desaturatedDarkBlue);
 
 		svg path {
-			fill: var(--white);
+			fill: var(--clr-white);
 		}
 	}
 }
