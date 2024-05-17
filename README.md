@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Finished Article Card Component Solution](./design/screenshot.png)
+![Finished Article Preview Component Solution](./design/screenshot.png)
 
 ### Links
 
