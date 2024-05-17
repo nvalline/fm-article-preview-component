@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/vanilla-css-and-js-_o7QbzD96s)
 - Live Site URL: [Here](https://nv-article-preview-component.netlify.app/)
 
 ## My process
